@@ -8,6 +8,19 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <script   src="http://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+  
+    <script type="text/javascript">
+    $(document).ready(function() {
+        var meme = $('#meme');
+        var sbtn = $('#sbtn');
+        sbtn.click(function() {
+            alert(meme.val());
+        });
+    });
+</script>
+  
+  
   </head>
   <body>
     <section class="page-header">
@@ -23,6 +36,10 @@
 <a id="welcome-to-the-meme-value-finder" class="anchor" href="#welcome-to-the-meme-value-finder" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to the Meme Value Finder.</h1>
 
 <p>To find information on a meme, use the search bar below, or select a trending meme from the list.</p>
+      <br><br><br>
+      
+      <input type="text" name="enter" value="Meme" id="meme"/>
+      <input type="button" value="click" id="sbtn" /
 
       <footer class="site-footer">
 <!--        <span class="site-footer-owner"><a href="https://github.com/memeeconomy/memevalue">Memevalue</a> is maintained by <a href="https://github.com/memeeconomy">memeeconomy</a>.</span>
@@ -34,4 +51,5 @@
 
   
   </body>
+  
 </html>
